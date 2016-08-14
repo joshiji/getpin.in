@@ -22,5 +22,23 @@ namespace GetPin.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<Country> Countries { get; set; }
+
+        public DbSet<District> Districts { get; set; }
+
+        public DbSet<Division> Divisions { get; set; }
+
+        public DbSet<Office> Offices { get; set; }
+
+        public PinCode PinCodes { get; set; }
+
+        public DbSet<PostOffice> PostOffices { get; set; }
+
+        public DbSet<Region> Regions { get; set; }
+
+        public DbSet<State> States { get; set; }
+
+        public DbSet<Taluk> Taluk { get; set; }
     }
 }
